@@ -6,11 +6,44 @@
         <p>Summer is the time of hot and warm weather. Floral growth is the best in the summer
             season. The Northern hemisphere experiences summer during June, July, August, while in
             Southern hemisphere during December - February.</p>
-        <p>Some of the flowers blooming in summer are: Alchemilla, Allium,
-            Alstromeria, Amaranthus, Baby's Breath, Bird of Paradise, Calla lily, Campanula,
-            Carnation, Chrysanthemum, Cockscomb, Cosmos, Dahlia, Delphinium, Dianthus, Didiscus,
-            Euphorbia, Foxglove, Freesia, Gardenia, Genista, Ginger, Gladiolus, Hallaconia, Heather,
-            Hydrangea, Hypericum, Iris, Kangaroo paw, Liatrus, Lilac, Casa Blanca Lily, Gloriosa
-            Lily, Star Gazer, Lisianthus.</p>
+        <p>Some of the flowers blooming in summer are:</p>
+        <p>This is a list of various types of flowers.</p>
+        <ul id="ul_zys_34v_vcc">
+            <li>Alchemilla</li>
+            <li>Allium</li>
+            <li>Alstromeria</li>
+            <li>Amaranthus</li>
+            <li>Baby's Breath</li>
+            <li>Bird of Paradise</li>
+            <li>Calla lily</li>
+            <li>Campanula</li>
+            <li>Carnation</li>
+            <li>Chrysanthemum</li>
+            <li>Cockscomb</li>
+            <li>Cosmos</li>
+            <li>Dahlia</li>
+            <li>Delphinium</li>
+            <li>Dianthus</li>
+            <li>Didiscus</li>
+            <li>Euphorbia</li>
+            <li>Foxglove</li>
+            <li>Freesia</li>
+            <li>Gardenia</li>
+            <li>Genista</li>
+            <li>Ginger</li>
+            <li>Gladiolus</li>
+            <li>Hallaconia</li>
+            <li>Heather</li>
+            <li>Hydrangea</li>
+            <li>Hypericum</li>
+            <li>Iris</li>
+            <li>Kangaroo paw</li>
+            <li>Liatrus</li>
+            <li>Lilac</li>
+            <li>Casa Blanca Lily</li>
+            <li>Gloriosa Lily</li>
+            <li>Star Gazer</li>
+            <li>Lisianthus</li>
+        </ul>
     </conbody>
 </concept>
