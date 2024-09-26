@@ -33,4 +33,12 @@
             <param name="editlink.enable.edit.in.content.fusion.workspace" value="false"/>
         </publication>
     </deliverable>
+    <deliverable id="d-Summer_Flowers-1727349861414" name="Summer Flowers">
+        <context idref="oeJANOdbLCOnNkl"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf">
+            <param name="pdf.publishing.template" value="cf://templates/Oxygen"/>
+            <param name="editlink.enable.edit.in.content.fusion.workspace" value="false"/>
+        </publication>
+    </deliverable>
 </project>
