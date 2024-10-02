@@ -1,8 +1,9 @@
 /*#
+@tags&{"tag-7":"flowers","tag-5":"spring","tag-10":"winter","tag-9":"summer"}&tags@
 @colors&{"titlesAccentColor":"#e723cb","labelsAccentColor":"#a02929","linksAccentColor":"#5185cb","backgroundAccentColor":"#f1d9f8","isDefault":true}&colors@
 @info@STYLES BASKET SELECTIONS METADATA@info@
 @name&styles_basket&name@
-@aspects&wh-tree,accent-colors-selector,wh-menu-page-colors-white-color-black-bg,wh-breadcrumb-colors-labels-colors-bg,wh-search-component-background-color-dark,wh-footer-background-color-dark,fonts-selector,wh-search-component-padding-extra-extra-large,notes-layout-two-lines,notes-style-borders-box,notes-colors-colorful,table-colors-black-white,wh-tiles-themes-titles-and-label-bg,between-elements-extra-large,between-lines-large,titles-position-centered,titles-borders-burger,titles-borders-width-thick,table-style-bottom-border,unordered-list-bullet-square,unordered-list-bullet-color-titles,unordered-list-bullet-size-bigger,ordered-list-counter-decimal,related-links-styles-bd-bottom-uppercase,page-columns-two,pdf-cover-title-horizontal-alignment-left,pdf-cover-title-vertical-alignment-top,pdf-cover-title-colors-labels,toc-numbering-deep,wh-tree-themes-titles-labels-colors-with-bg,wh-breadcrumb-style-bold-selection,wh-breadcrumb-separator-diamond,wh-left-toc-light-shadow,pdf-cover-selector,preview-selector&aspects@
+@aspects&wh-tree,accent-colors-selector,wh-menu-page-colors-white-color-black-bg,wh-breadcrumb-colors-labels-colors-bg,wh-search-component-background-color-dark,wh-footer-background-color-dark,fonts-selector,wh-search-component-padding-extra-extra-large,notes-layout-two-lines,notes-style-borders-box,notes-colors-colorful,table-colors-black-white,wh-tiles-themes-titles-and-label-bg,between-elements-extra-large,between-lines-large,titles-position-centered,titles-borders-burger,titles-borders-width-thick,table-style-bottom-border,unordered-list-bullet-square,unordered-list-bullet-color-titles,unordered-list-bullet-size-bigger,ordered-list-counter-decimal,related-links-styles-bd-bottom-uppercase,page-columns-two,pdf-cover-title-horizontal-alignment-left,pdf-cover-title-vertical-alignment-top,pdf-cover-title-colors-labels,toc-numbering-deep,wh-tree-themes-titles-labels-colors-with-bg,wh-breadcrumb-style-bold-selection,wh-breadcrumb-separator-diamond,wh-left-toc-light-shadow,pdf-cover-selector,preview-selector,tags-selector&aspects@
 @info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICATION CAN CAUSE UPLOADING ERRORS@info@
 @info@TIP: YOU CAN USE custom.css TO ADD CUSTOM SELECTORS.@info@
 #*/
@@ -368,4 +369,5 @@ span.note__title {
   background-color: #c158e0;
 }
 /*preview-selector*/
+/*tags-selector*/
 

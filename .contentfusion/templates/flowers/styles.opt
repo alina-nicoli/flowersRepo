@@ -3,6 +3,12 @@
     <name>Custom Template</name>
     <webhelp>
         <preview-image file="preview/preview.jpg"/>
+        <tags>
+            <tag>flowers</tag>
+            <tag>spring</tag>
+            <tag>winter</tag>
+            <tag>summer</tag>
+        </tags>
         <resources>
             <css file="custom.css"/>
             <css file="styles.css"/>
@@ -26,5 +32,11 @@
         <parameters>
             <parameter name="args.css.param.numbering" value="deep"/>
         </parameters>
+        <tags>
+            <tag>flowers</tag>
+            <tag>spring</tag>
+            <tag>winter</tag>
+            <tag>summer</tag>
+        </tags>
     </pdf>
 </publishing-template>
