@@ -1,8 +1,8 @@
 /*#
-@colors&{"titlesAccentColor":"#000000","labelsAccentColor":"#878787","linksAccentColor":"#5185cb","backgroundAccentColor":"#dce5f2","isDefault":true}&colors@
+@colors&{"titlesAccentColor":"#e723cb","labelsAccentColor":"#a02929","linksAccentColor":"#5185cb","backgroundAccentColor":"#f1d9f8","isDefault":true}&colors@
 @info@STYLES BASKET SELECTIONS METADATA@info@
 @name&styles_basket&name@
-@aspects&wh-tiles,accent-colors-selector,wh-menu-page-colors-white-color-black-bg,wh-breadcrumb-colors-labels-colors-bg,wh-search-component-background-color-dark,wh-footer-background-color-dark,fonts-selector,wh-search-component-padding-extra-extra-large,notes-layout-two-lines,notes-style-borders-box,notes-colors-colorful,table-colors-black-white,wh-tiles-themes-titles-and-link-bg&aspects@
+@aspects&wh-tree,accent-colors-selector,wh-menu-page-colors-white-color-black-bg,wh-breadcrumb-colors-labels-colors-bg,wh-search-component-background-color-dark,wh-footer-background-color-dark,fonts-selector,wh-search-component-padding-extra-extra-large,notes-layout-two-lines,notes-style-borders-box,notes-colors-colorful,table-colors-black-white,wh-tiles-themes-titles-and-label-bg,between-elements-extra-large,between-lines-large,titles-position-centered,titles-borders-burger,titles-borders-width-thick,table-style-bottom-border,unordered-list-bullet-square,unordered-list-bullet-color-titles,unordered-list-bullet-size-bigger,ordered-list-counter-decimal,related-links-styles-bd-bottom-uppercase,page-columns-two,pdf-cover-selector,pdf-cover-title-horizontal-alignment-left,pdf-cover-title-vertical-alignment-top,pdf-cover-title-colors-labels,toc-numbering-deep,wh-tree-themes-titles-labels-colors-with-bg,wh-breadcrumb-style-bold-selection,wh-breadcrumb-separator-diamond,wh-left-toc-light-shadow&aspects@
 @info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICATION CAN CAUSE UPLOADING ERRORS@info@
 @info@TIP: YOU CAN USE custom.css TO ADD CUSTOM SELECTORS.@info@
 #*/
@@ -50,6 +50,14 @@
   font-weight: 700;
   font-style: italic;
 }
+@media print {
+  @page front-page {
+    background-image: url("resources/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
 /* Bold selection in Publication TOC. WebHelp only. */
 @media screen {
   .wh_publication_toc .active > .topicref a {
@@ -68,10 +76,10 @@
 *[class~="placeholder/figurelist"] > *[class~="topic/title"],
 *[class~="placeholder/tablelist"] > *[class~="topic/title"],
 *[class~="index/groups"]::before {
-  color: #000000;
+  color: #e723cb;
 }
 *[class~='topic/shortdesc']:before {
-  color: #878787;
+  color: #a02929;
 }
 *[class~='topic/xref'],
 *[class~='topic/link'] {
@@ -87,7 +95,7 @@ a:visited {
   color: #5185cb;
 }
 *[class~='topic/table'] th {
-  background-color: #dce5f2;
+  background-color: #f1d9f8;
 }
 /*fonts-selector*/
 @page {
@@ -119,9 +127,94 @@ a:visited {
 body {
   font-family: 'SecondaryBrandingFont', sans-serif;
 }
+/*between-elements-extra-large*/
+*[class~='topic/p'],
+*[class~='topic/lq'],
+*[class~='topic/note'],
+*[class~='topic/dl'],
+*[class~='topic/ul'],
+*[class~='topic/ol'],
+*[class~='topic/li'],
+*[class~='topic/sl'],
+*[class~='topic/pre'],
+*[class~='topic/lines'],
+*[class~='topic/fig'],
+*[class~='topic/table'],
+*[class~='topic/simpletable'],
+*[class~='topic/section'],
+*[class~='topic/example'] {
+  margin: 1.5em 0;
+}
+/*between-lines-large*/
+*[class~='topic/topic'],
+*[class~='topic/body'],
+*[class~='topic/title'] {
+  line-height: 1.6;
+}
+/*titles-position-centered*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  text-align: center;
+}
+/*titles-borders-burger*/
+.topictitle1,
+.topictitle2:not(*[class ~= "glossentry/glossterm"]),
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 0.25em;
+}
+/*titles-borders-width-thick*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  border-width: thick !important;
+}
+/*table-style-bottom-border*/
+*[class~='topic/entry'],
+*[class~='topic/stentry'] {
+  border: 0;
+  border-bottom: thin solid;
+}
 /*table-colors-black-white*/
 *[class~='topic/table'] th {
   background-color: #ffffff;
+}
+/*unordered-list-bullet-square*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"] {
+  list-style-type: square;
+}
+/*unordered-list-bullet-color-titles*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::before {
+  color: #e723cb;
+}
+/*unordered-list-bullet-size-bigger*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::before {
+  font-size: 1.3em;
+}
+/*ordered-list-counter-decimal*/
+*[class="- topic/ol ol"] > *[class="- topic/li li"] {
+  list-style-type: decimal;
 }
 /*notes-layout-two-lines*/
 span.note__title {
@@ -152,24 +245,92 @@ span.note__title {
   background-color: rgba(255, 226, 225, 0.32);
   border-color: #FF342D;
 }
-/*wh-tiles*/
-/*wh-tiles-themes-titles-and-link-bg*/
+/*related-links-styles-bd-bottom-uppercase*/
+*[class~="topic/linklist"] > strong {
+  border-bottom: 1px solid #e723cb;
+  text-transform: uppercase;
+  display: inherit;
+}
+/*page-columns-two*/
+@media print {
+  @page chapter {
+    column-count: 2;
+  }
+}
+/*pdf-cover-selector*/
+/*pdf-cover-title-horizontal-alignment-left*/
+*[class~="front-page/front-page-title"] > *[class~="topic/title"] {
+  text-align: left;
+}
+/*pdf-cover-title-vertical-alignment-top*/
+*[class~="front-page/front-page-title"] {
+  margin-top: 0px;
+}
+/*pdf-cover-title-colors-labels*/
+*[class~="front-page/front-page-title"] > *[class~="topic/title"] {
+  color: #a02929;
+  background-color: transparent;
+}
+/*toc-numbering-deep*/
+/*wh-tree*/
+/*wh-tiles-themes-titles-and-label-bg*/
 .wh_tile {
   border-radius: 8px;
-  background-color: #dce5f2;
+  background-color: #f1d9f8;
 }
 .wh_tile_title {
   text-align: center;
   font-size: 1.5em;
 }
 .wh_tile_title a {
-  color: #5185cb;
+  color: #e723cb;
 }
 .wh_tile_shortdesc {
   margin-top: 1em;
   margin-bottom: 0.5em;
   text-align: center;
-  color: #000000;
+  color: #a02929;
+}
+/*wh-tree-themes-titles-labels-colors-with-bg*/
+.wh_main_page_toc {
+  border: none;
+  background-color: #f1d9f8;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header,
+.wh_main_page_toc > .wh_main_page_toc_entry,
+.wh_main_page_toc_accordion_entries {
+  border-bottom: #e723cb;
+  background-color: transparent;
+  text-align: left;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover {
+  background-color: rgba(231, 35, 203, 0.2);
+  color: #e723cb;
+}
+.wh_main_page_toc .topicref a,
+.wh_main_page_toc .topicref a:visited {
+  color: #e723cb;
+}
+.wh_main_page_toc .wh_toc_shortdesc {
+  color: #a02929;
+  font-weight: normal;
+}
+.wh_main_page_toc_accordion_header:before {
+  color: #e723cb;
+}
+/*wh-breadcrumb-style-bold-selection*/
+.wh_breadcrumb ol .active a {
+  font-weight: bold;
+}
+/*wh-breadcrumb-separator-diamond*/
+.wh_breadcrumb li:not(:last-of-type):after {
+  content: ' \0025C6 ';
+}
+/*wh-left-toc-light-shadow*/
+.wh_publication_toc {
+  box-shadow: 0px 0px 3px 1px #a02929;
+  padding: 1em;
 }
 /*wh-menu-page-colors-white-color-black-bg*/
 .wh_header {
@@ -196,7 +357,7 @@ span.note__title {
 }
 /*wh-search-component-background-color-dark*/
 .wh_search_input {
-  background-color: #92aed6;
+  background-color: #d183e8;
 }
 /*wh-search-component-padding-extra-extra-large*/
 .wh_search_input {
@@ -204,6 +365,6 @@ span.note__title {
 }
 /*wh-footer-background-color-dark*/
 .wh_footer {
-  background-color: #6c92c9;
+  background-color: #c158e0;
 }
 
